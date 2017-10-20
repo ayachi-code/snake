@@ -1,9 +1,11 @@
 var slang;
+var scl;
 
 
 function setup() {
   createCanvas(800,600);
   slang = new Snake();
+  
 
 }
 
@@ -25,5 +27,11 @@ function draw() {
     background(50);
     slang.update();
     slang.show();
+    slang.check();
+
+
+
+
+
 
 }
